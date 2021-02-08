@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap');
+
+@import "base/variables";
 
 *,
 *::before,
@@ -13,6 +16,11 @@ html {
 body {
   min-height: 100vh;
   font-family: 'PT Sans', sans-serif;
+  font-size: 1.4rem;
+  color: $main-text-color;
+  //scroll-behavior: smooth;
+  //text-rendering: optimizeSpeed;
+  //line-height: 1;
 }
 
 body, h1, h2, h3, h4, p, ul, ol, li {
@@ -23,3 +31,22 @@ ul, ol {
   padding: 0;
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@import "base/message";
+@import "base/header";
+@import "base/searchform";
+@import "base/account";
+

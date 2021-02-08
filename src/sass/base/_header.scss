@@ -1,0 +1,65 @@
+.header {
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  color: $dark-grey;
+  &-bg {
+    background: $light-grey;
+  }
+  &__link {
+    color: $dark-grey;
+  }
+  &-top {
+    display: flex;
+    min-height: 5.6rem;
+    justify-content: space-between;
+    align-items: center;
+    &__left-side {
+      min-width: 31rem;
+      display: flex;
+      justify-content: space-between;
+      & a:last-child {
+        color: $secondary-color;
+      }
+    }
+    &__right-side {
+      min-width: 67.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & a:last-child {
+        color: $main-color;
+        font-family: 'PT Sans Caption', sans-serif;
+      }
+    }
+  }
+  &-bottom {
+    display: flex;
+    min-height: 6.6rem;
+    /* padding-top: 1rem; */
+    align-items: center;
+    font-size: 1.6rem;
+    color: $main-text-color;
+    &__logo {
+      margin-right: 4.4rem;
+    }
+    &__menu {
+      width: 53rem;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 11.6rem;
+      margin-top: 3.8rem;
+    }
+    &__link {
+      color: $main-text-color;
+      &-tel {
+        font-family: PT Sans Caption, sans-serif;
+        color: #6F6F6F;
+        margin: 3.2rem 4.1rem 0 0;
+      }
+    }
+    &__account {
+      margin-top: 36px;
+    }
+  }
+}
