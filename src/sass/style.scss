@@ -16,7 +16,7 @@ html {
 body {
   min-height: 100vh;
   font-family: 'PT Sans', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: $main-text-color;
   //scroll-behavior: smooth;
   //text-rendering: optimizeSpeed;
@@ -45,8 +45,27 @@ a {
   text-transform: uppercase;
 }
 
+.section__title {
+  font-family: PT Sans Caption, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 41px;
+  color: $main-text-color;
+}
+
+.orng-link {
+  font-family: PT Sans Caption, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: $main-color;
+}
+
 @import "base/message";
 @import "base/header";
 @import "base/searchform";
+@import "base/buttons";
 @import "base/account";
-
+@import "base/promo";

@@ -1,0 +1,45 @@
+.promo {
+  display: flex;
+  //width: 1312px;
+  //margin: 0 auto;
+  padding: 6.3rem 0 11.7rem 0;
+  &__content {
+    max-width: 54.5rem;
+    margin-right: 6.12rem;
+  }
+  &__title {
+    max-width: 48rem;
+    font-size: 4rem;
+    line-height: 5.6rem;
+    //text-align: center;
+    margin-bottom: 1.3rem;
+  }
+  &__description {
+    min-width: 53rem;
+    font-size: 16px;
+    line-height: 21px;
+    color: $middle-grey;
+    margin-bottom: 4.5rem;
+  }
+  &__list {
+    //margin: 0 0 6.7rem 3.1rem;
+    margin: 0 0 6.4rem 3.1rem;
+    list-style: disc;
+    &-item {
+      line-height: 3.5rem;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+    }
+  }
+  &__buttons {
+    width: 100%;
+    //width: 555px;p
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__arrow-right {
+    transform: rotate(-90deg);
+  }
+}
