@@ -1,0 +1,28 @@
+.safety {
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 58.9rem;
+    min-height: 30rem;
+    padding: 8.1rem 0 3.4rem 0;
+  }
+  &__list-item {
+    display: flex;
+    align-items: baseline;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    & span {
+      padding-left: 3.2rem;
+    }
+  }
+}

@@ -62,10 +62,12 @@ a {
   color: $main-color;
 }
 
-@import "base/message";
-@import "base/header";
-@import "base/searchform";
-@import "base/buttons";
-@import "base/account";
-@import "base/promo";
-@import "base/comparing";
+@import "blocks/message";
+@import "blocks/header";
+@import "blocks/searchform";
+@import "blocks/buttons";
+@import "blocks/account";
+@import "blocks/promo";
+@import "blocks/comparing";
+@import "blocks/try-free";
+@import "blocks/safety";
