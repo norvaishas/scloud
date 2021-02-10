@@ -18,9 +18,8 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 1.6rem;
   color: $main-text-color;
-  //scroll-behavior: smooth;
-  //text-rendering: optimizeSpeed;
-  //line-height: 1;
+  //background: #f8f9f6;
+  //background: #f2f2f2;
 }
 
 body, h1, h2, h3, h4, p, ul, ol, li {
@@ -69,3 +68,4 @@ a {
 @import "base/buttons";
 @import "base/account";
 @import "base/promo";
+@import "base/comparing";
