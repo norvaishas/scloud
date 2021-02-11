@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
 
 @import "base/variables";
+@import "base/mixins";
 
 *,
 *::before,
@@ -34,34 +36,7 @@ ul, ol {
 a {
   text-decoration: none;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.section__title {
-  font-family: PT Sans Caption, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 41px;
-  color: $main-text-color;
-}
-
-.orng-link {
-  font-family: PT Sans Caption, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: $main-color;
-}
-
+@import "base/common";
 @import "blocks/message";
 @import "blocks/header";
 @import "blocks/searchform";
@@ -71,3 +46,4 @@ a {
 @import "blocks/comparing";
 @import "blocks/try-free";
 @import "blocks/safety";
+@import "blocks/tariffs";

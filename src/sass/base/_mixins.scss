@@ -1,0 +1,14 @@
+@mixin column-title {
+  font-family: PT Sans Caption, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: $main-text-color;
+}
+
+@mixin caption($fs, $fw) {
+  font-family: PT Sans Caption, sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  font-style: normal;
+}

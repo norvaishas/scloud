@@ -1,7 +1,9 @@
 .comparing {
   padding-bottom: 10.9rem;
   &__title {
-    margin-bottom: 6.8rem;
+    //margin-bottom: 6.8rem;
+    margin-bottom: 7rem;
+
   }
   &__content {
     display: flex;
@@ -10,11 +12,7 @@
 }
 
 .column {
-  width: 38.4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-width: 38.4rem;
   box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
   border-top: 8px solid $secondary-color;
   border-radius: 8px 8px 10px 1px;
@@ -39,11 +37,7 @@
     width: 100%;
     border-bottom: 1px solid #E4E4E4;
     padding: 3.6rem 6rem;
-    font-family: PT Sans Caption, sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 2.6rem;
-    color: $main-text-color;
+    @include column-title;
     span {
       margin-top: 1rem;
       display: inline-block;
