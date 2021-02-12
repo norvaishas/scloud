@@ -26,4 +26,26 @@
   &_grn {
     background: linear-gradient(180deg, #40A800 0%, #178A00 100%);
   }
+  &_tr-orng {
+    position: relative;
+    background: transparent;
+    width: 224px;
+    height: 48px;
+    border: 2px solid $main-color;
+    border-radius: 45px;
+    padding: 0;
+    @include caption(1.3rem, 700);
+    line-height: 17px;
+    color: $main-color;
+    &:after {
+      content: '';
+      top: 35%;
+      width: 12px;
+      height: 15px;
+      position: absolute;
+      background-image: url("../icons/triangle.svg");
+      background-repeat: no-repeat;
+      margin-left: 20px;
+    }
+  }
 }

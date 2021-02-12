@@ -1,6 +1,6 @@
 .work-start {
   position: relative;
-  padding-bottom: 10rem;
+  padding-bottom: 16rem;
   &__title {
     padding-bottom: 6.5rem;
   }
@@ -14,7 +14,8 @@
     position: absolute;
     width: 100%;
     border-top: 1px dashed $middle-grey;
-    top: 33.5%;
+    //top: 29.5%;
+    top: 162px;
   }
 }
 
