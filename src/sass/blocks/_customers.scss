@@ -1,0 +1,31 @@
+.customers {
+  margin-bottom: 12.9rem;
+  &__title {
+    margin-bottom: 5.5rem;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+  }
+  &__content {
+    display: flex;
+  }
+  &__img {
+    margin-left: auto;
+  }
+  &__subtitle {
+    @include column-title;
+    margin-bottom: 4rem;
+  }
+  &__list {
+
+    &-item {
+      line-height: 4.2rem;
+
+      & span {
+        padding-left: 2rem;
+      }
+    }
+  }
+}

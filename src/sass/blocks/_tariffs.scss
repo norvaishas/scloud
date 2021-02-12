@@ -1,5 +1,5 @@
 .tariffs {
-  padding-bottom: 5rem;
+  padding-bottom: 15rem;
   &__title {
     margin-bottom: 5.4rem;
   }
@@ -8,6 +8,9 @@
     justify-content: space-between;
     width: 71%;
     margin: 0 auto 5.2rem;
+    & .btn {
+      padding: 1em 1.5em;
+    }
   }
   &__discount {
     background: #FFFFFF;
