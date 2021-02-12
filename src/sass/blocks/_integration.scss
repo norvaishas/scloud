@@ -1,0 +1,12 @@
+.integration {
+  margin-bottom: 14.7rem;
+  &__title {
+    margin-bottom: 9.5rem;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
