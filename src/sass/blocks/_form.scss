@@ -1,0 +1,38 @@
+.form {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  span {
+    font-size: 1.4rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.02em;
+  }
+  a {
+    color: $main-color;
+    text-decoration: underline;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+  &__inputs {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.3rem;
+  }
+  &__input {
+    width: 38.4rem;
+    height: 6.4rem;
+    border: 1px solid #B6B6B6;
+    border-radius: 5px;
+    padding-left: 2.5rem;
+  }
+  &__offer {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
