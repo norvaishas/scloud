@@ -12,3 +12,18 @@
   font-weight: $fw;
   font-style: normal;
 }
+
+@mixin card-link {
+  position: relative;
+  @include caption(1.4rem, 700);
+  line-height: 1.8rem;
+  text-decoration: underline;
+  cursor: pointer;
+  &:after {
+    position: absolute;
+    content: '^';
+    font-size: 2.4rem;
+    margin-left: .5rem;
+    transform: rotate(90deg);
+  }
+}
