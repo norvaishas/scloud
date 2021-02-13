@@ -29,7 +29,7 @@
   &_tr-orng {
     position: relative;
     background: transparent;
-    width: 224px;
+    min-width: 224px;
     height: 48px;
     border: 2px solid $main-color;
     border-radius: 45px;
@@ -45,7 +45,7 @@
       position: absolute;
       background-image: url("../icons/triangle.svg");
       background-repeat: no-repeat;
-      margin-left: 20px;
+      margin-left: 10px;
     }
   }
 }

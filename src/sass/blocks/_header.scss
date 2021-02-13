@@ -1,11 +1,13 @@
 .header {
-  position: sticky;
-  top: 0;
   margin: 0 auto;
   font-size: 1.4rem;
   color: $dark-grey;
   padding-bottom: 6.6rem;
   &-bg {
+    position: sticky;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
     background: $light-grey;
   }
   &__link {

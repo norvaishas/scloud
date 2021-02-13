@@ -1,7 +1,7 @@
 .reasons {
-  margin-bottom: 10rem;
+  margin-bottom: 9rem;
   &__title {
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
   }
   &__content {
     display: flex;
@@ -43,13 +43,15 @@
 .feedback {
   &__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   &__item {
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
     width: 45%;
-    padding: 6.7rem 0 4.5rem 6.7rem;
+    min-width: 588px;
+    //padding: 6.7rem 0 4.5rem 6.7rem;
+    padding: 48px 0 45px 77px;
     background: #FFFFFF;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -58,7 +60,7 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     &-name {
       @include caption(2rem, 700);
       line-height: 26px;
@@ -79,14 +81,14 @@
     margin-bottom: 3rem;
   }
   &__more {
-    //display: block;
     @include card-link;
-    //margin-top: 3rem;
+    margin-left: 8.4rem;
   }
 }
 
 .slider-dots {
-  margin: 3rem auto;
+  margin: 3.2rem auto;
+  margin-bottom: 10px;
   width: 9.2rem;
   display: flex;
   justify-content: space-between;
