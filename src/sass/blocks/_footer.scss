@@ -1,0 +1,85 @@
+.footer {
+  padding: 0 0 5rem 0;
+  &__container {
+    border-top: 1px solid #C0C0C0;
+    padding-top: 6rem;
+  }
+  &-nav {
+    //width: 109px;
+    display: flex;
+    justify-content: space-between;
+
+    &__column {
+      max-width: 19%;
+      display: flex;
+      flex-direction: column;
+
+      &-title {
+        @include pt-sans(1.6rem, 700);
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__link {
+      line-height: 28px;
+      color: #333333;
+
+      &_more {
+        @include card-link;
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+        color: $main-color;
+      }
+    }
+  }
+
+  &-info {
+
+  }
+  &-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+  }
+  &-bottom {
+    background: #F4F4F4;
+
+    &__container {
+      min-height: 5.6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include caption(1.4rem, 400);
+      color: $main-text-color;
+    }
+
+    &__download {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+  align-items: flex-start;
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  &__phone {
+    @include caption(2rem, 700);
+    line-height: 26px;
+    color: $main-text-color;
+
+    margin-bottom: 13px;
+    display: block;
+  }
+  &__address {
+    @include caption(1.4rem, 400);
+    line-height: 20px;
+  }
+}
