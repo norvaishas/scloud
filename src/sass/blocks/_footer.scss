@@ -4,7 +4,6 @@
     padding-top: 6rem;
   }
   &-nav {
-    //width: 109px;
     display: flex;
     justify-content: space-between;
 
@@ -26,7 +25,7 @@
       &_more {
         @include card-link;
         margin-top: 2rem;
-        margin-bottom: 8rem;
+        margin-bottom: 9rem;
         color: $main-color;
       }
     }

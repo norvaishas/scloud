@@ -1,0 +1,411 @@
+@media screen and (max-width: 1367px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    min-width: 28.9rem;
+    padding: 1em 2em;
+    &_mw170 {
+      min-width: 19.3rem;
+    }
+  }
+
+  .container,
+  .message {
+    max-width: 99.4rem;
+  }
+
+  .message {
+    font-size: 1.2rem;
+    height: 3.2rem;
+  }
+
+  .header {
+    padding-bottom: 0.6rem;
+    &-bottom {
+      min-height: 8.6rem;
+      font-size: 1.4rem;
+
+      &__logo {
+        width: 8rem;
+        margin-right: 3.4rem;
+        margin-left: 1rem;
+      }
+      &__link-tel {
+        display: none;
+      }
+    }
+    &-top {
+      &__left-side {
+        min-width: 29rem;
+      }
+      &__right-side {
+        min-width: 59.5rem;
+      }
+    }
+    button {
+      min-width: 17.9rem;
+      padding: 1em 2em;
+    }
+  }
+
+  .search-form {
+    width: 200px;
+  }
+
+//  --> Promo
+  .promo {
+    &__content {
+      max-width: 49.5rem;
+      margin-right: 55px;
+    }
+    &__title {
+      max-width: 44rem;
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+    }
+    &__description {
+      min-width: 46rem;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 32px;
+    }
+    &__list {
+      margin-bottom: 4.4rem;
+      &-item {
+        line-height: 3.1rem;
+        font-size: 1.8rem;
+      }
+    }
+    &__pic {
+      img {
+        width: 115%;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  // comparing
+  .comparing {
+    padding-bottom: 12.9rem;
+    &__title {
+      margin-bottom: 6.4rem;
+    }
+  }
+
+  .column {
+    min-width: 31.4rem;
+    &__title {
+      padding: 15px 30px 29px;
+      font-size: 18px;
+      line-height: 26px;
+      span {
+        margin-top: 2rem;
+      }
+    }
+    &-description {
+      min-width: 33.8rem;
+      &__title {
+        padding: 0 76px 28px 0;
+        line-height: 2rem;
+      }
+      &__item {
+        padding-left: 1rem;
+      }
+    }
+    &__item {
+      min-height: 5.4rem;
+    }
+  }
+
+  //form
+  .try-free {
+    padding-bottom: 10.3rem;
+  }
+  .form {
+    &__input {
+      width: 31.5rem;
+      height: 58px;
+    }
+    &__offer {
+      width: 64%;
+    }
+  }
+
+//  Safety
+  .safety {
+    padding-bottom: 9rem;
+    &__title {
+
+      &_hide {
+        display: none;
+      }
+    }
+    &__list {
+      max-width: 52.9rem;
+      padding: 7.2rem 0 0.4rem 0;
+
+
+      &-item {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+      }
+    }
+    &__img {
+      img {
+        width: 87%;
+        margin-top: 24px;
+      }
+    }
+  }
+
+  /*  Tariffs  */
+
+  .tariffs {
+    padding-bottom: 13rem;
+    &__title {
+      margin-bottom: 6.4rem;
+    }
+    &__buttons {
+      width: 85%;
+      margin: 0 auto 5.6rem;
+      .btn {
+        padding: 1em 1em;
+
+      }
+    }
+    &-column {
+      font-size: 18px;
+      &__item {
+        padding-left: 5.7rem;
+        padding-bottom: 4rem;
+        &:first-child {
+          padding-top: 4rem;
+          padding-bottom: 3.2rem;
+          padding-left: 5.9rem;
+        }
+        &:nth-child(2) {
+          padding: 1rem 0 0 6rem;
+          font-size: 18px;
+        }
+      }
+      &__price {
+        width: 75%;
+      }
+      &__subtitle {
+        margin-top: 2rem;
+      }
+      li {
+        line-height: 32px;
+        margin-top: 1.2rem;
+        padding-left: 2.1rem;
+      }
+    }
+    .fs-2032 {
+      font-size: 18px;
+    }
+  }
+
+  .customers {
+    margin-bottom: 12rem;
+    &__title {
+
+    }
+    &__buttons {
+      width: 95%;
+      flex-wrap: wrap;
+      margin-bottom: 3.5rem;
+      .btn {
+        margin: 1rem 0;
+        min-width: 176px;
+      }
+    }
+    &__subtitle {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      margin-bottom: 1rem;
+    }
+    &__img {
+      width: 50%;
+    }
+    &__list-item {
+      line-height: 2.2rem;
+      span {
+        padding-left: 3rem;
+      }
+    }
+  }
+
+  /* Integration*/
+
+  .integration {
+    padding-bottom: 9rem;
+    &__title {
+      display: none;
+      &_mobile {
+        display: block;
+        margin-bottom: 12.5rem;
+      }
+    }
+    &__content {
+      justify-content: space-around;
+    }
+    &__card {
+      max-width: 36%;
+      h3 {
+        margin-left: 7rem;
+      }
+    }
+  }
+
+  /* Work-start, stage */
+
+  .work-start {
+    padding-bottom: 11rem;
+    &__content {
+      width: 96%;
+    }
+  }
+
+  .stage {
+    &__number {
+      margin-bottom: 1rem;
+    }
+    &__descr {
+      width: 160%;
+    }
+    &__registration {
+      width: 11rem;
+    }
+  }
+
+  /* Reasons */
+
+  .reasons {
+    margin-bottom: 0;
+    padding-bottom: 5.5rem;
+    &__content {
+      margin-bottom: 6rem;
+    }
+    &__title {
+      margin-bottom: 7rem;
+    }
+    &__wrapper {
+      max-width: 48%;
+    }
+    &__card {
+      width: 44%;
+      margin-bottom: 7px;
+      &-text {
+        display: inline-block;
+        font-size: 18px;
+        margin-bottom: 3rem;
+      }
+    }
+    &__pic {
+      max-width: 462px;
+      img {
+        margin: -35px 0 0 57px;
+        width: 100%;
+      }
+    }
+    &__details {
+      margin-top: 0;
+    }
+  }
+
+  .feedback {
+    &__item {
+      min-width: 485px;
+      padding: 45px 0 48px 40px;
+    }
+    &__author {
+      width: 86%;
+    }
+    button {
+      min-width: 22rem;
+      font-size: 12px;
+    }
+    &__more {
+      margin-left: 37px;
+      font-size: 12px;
+    }
+  }
+
+  .slider-dots {
+    margin-bottom: 0;
+  }
+
+  /* Begin-now */
+
+  .begin-now {
+    padding-bottom: 10.5rem;
+    &__title {
+      margin-bottom: 5rem;
+    }
+  }
+
+  /* Footer */
+
+  .footer {
+    &-nav {
+      &__column {
+        max-width: 23%;
+      }
+
+      &__link {
+        font-size: 1.6rem;
+
+        &_more {
+          margin-top: 2.4rem;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+    &-middle {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .info {
+    width: 37%;
+    &__phone {
+      font-size: 1.8rem;
+      line-height: 1.3rem;
+    }
+    &__logo {
+      img {
+        width: 74px;
+        margin-top: 14px;
+      }
+    }
+  }
+
+  .socials {
+    &__link {
+      img {
+        width: 48.5px;
+      }
+    }
+  }
+
+  .app {
+    img {
+      width: 146px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

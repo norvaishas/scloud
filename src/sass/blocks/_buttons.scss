@@ -1,7 +1,16 @@
+/*  Список кнопок:
+
+    176px - 148 - 125 - Хэдер
+    319px - 288 - 279
+    193   -
+    170
+    224 прозрачная с орнж бордером
+*/
+
 .btn {
   min-width: 31.9rem;
-  padding: 1em 3em;
   height: 4.8rem;
+  padding: 1em 3em;
   background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%);
   border-radius: 4.5rem;
   border: none;
@@ -9,6 +18,7 @@
   font-family: PT Sans Caption, sans-serif;
   font-weight: bold;
   color: #FFFFFF;
+
   &_transparent {
     background: transparent;
     color: $main-text-color;
@@ -17,15 +27,23 @@
     font-size: 14px;
     line-height: 18px;
   }
+
   &_mw195 {
     min-width: 195px;
   }
+
+  &_mw176 {
+    min-width: 17rem;
+  }
+
   &_mw170 {
     min-width: 17rem;
   }
+
   &_grn {
     background: linear-gradient(180deg, #40A800 0%, #178A00 100%);
   }
+
   &_tr-orng {
     position: relative;
     background: transparent;
