@@ -29,6 +29,7 @@
   cursor: pointer;
   &:after {
     position: absolute;
+    bottom: 3px;
     content: '^';
     font-size: 2.4rem;
     margin-left: .5rem;

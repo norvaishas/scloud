@@ -28,7 +28,14 @@
     border: 1px solid #B6B6B6;
     border-radius: 5px;
     padding-left: 2.5rem;
+
+    &-text {
+      &_mobile {
+        display: none;
+      }
+    }
   }
+
   &__offer {
     width: 55%;
     display: flex;
