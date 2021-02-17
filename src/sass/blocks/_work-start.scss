@@ -68,5 +68,84 @@
   &__registration {
     @include card-link;
   }
+}
 
+@media screen and (max-width: 1367px) {
+  .work-start {
+    padding-bottom: 11rem;
+
+    &__content {
+      width: 96%;
+    }
+  }
+
+  .stage {
+    &__number {
+      margin-bottom: 1rem;
+    }
+
+    &__descr {
+      width: 160%;
+    }
+
+    &__registration {
+      width: 11rem;
+    }
+  }
+}
+
+@include breakpoint($tablet) {
+  .work-start {
+    padding-bottom: 6rem;
+
+    &__title {
+      padding-bottom: 4rem;
+    }
+
+    &__line {
+      display: none;
+    }
+
+    &__stage {
+      display: none;
+    }
+
+    &__content {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 45%;
+      max-width: 30rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+
+
+      &-row {
+        display: flex;
+        margin-bottom: 15px;
+      }
+
+      &-number {
+        @include caption(2rem, 700);
+        line-height: 26px;
+        color: #333333;
+        margin-right: 5%;
+      }
+
+      &-text {
+        width: 52%;
+        line-height: 21px;
+      }
+    }
+  }
+
+  .stage__registration {
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
 }

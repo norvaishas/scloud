@@ -2,19 +2,23 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+
   span {
     font-size: 1.4rem;
     line-height: 2.9rem;
     letter-spacing: 0.02em;
   }
+
   a {
     color: $main-color;
     text-decoration: underline;
   }
+
   label {
     display: flex;
     flex-direction: column;
   }
+
   &__inputs {
     width: 100%;
     margin: 0 auto;
@@ -22,6 +26,7 @@
     justify-content: space-between;
     margin-bottom: 3.3rem;
   }
+
   &__input {
     width: 38.4rem;
     height: 6.4rem;
@@ -41,5 +46,67 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .form {
+    &__input {
+      width: 31.5rem;
+      height: 58px;
+    }
+
+    &__offer {
+      width: 64%;
+    }
+  }
+}
+
+@include breakpoint($tablet) {
+  .form {
+    &__inputs {
+      flex-wrap: wrap;
+      min-height: 180px;
+      margin-bottom: 0;
+
+      label {
+        width: 100%;
+      }
+    }
+
+    &__input {
+      width: 100%;
+      height: 4rem;
+
+      &-text {
+        display: none;
+
+        &_mobile {
+          display: inline;
+          font-size: 12px;
+          line-height: 29px;
+        }
+      }
+    }
+
+    &__offer {
+      width: 85%;
+      margin-top: 20px;
+
+      &-text {
+        margin-left: 5%;
+        line-height: 20px;
+      }
+
+      .btn {
+        height: 40px;
+        padding: 0;
+      }
+    }
+
+    span {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
   }
 }

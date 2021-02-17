@@ -23,3 +23,68 @@
     }
   }
 }
+
+@media screen and (max-width: 1367px) {
+  .safety {
+    padding-bottom: 9rem;
+
+    &__title {
+
+      &_hide {
+        display: none;
+      }
+    }
+
+    &__list {
+      max-width: 52.9rem;
+      padding: 7.2rem 0 0.4rem 0;
+
+
+      &-item {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+      }
+    }
+
+    &__img {
+      img {
+        width: 87%;
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+@include breakpoint($tablet) {
+  .safety {
+    padding-bottom: 5rem;
+
+    &__title {
+
+    }
+
+    &__img {
+      max-width: 308px;
+
+      img {
+        max-width: 87%;
+        margin-top: 32px;
+      }
+    }
+
+    &__list {
+      max-width: 50%;
+      min-height: 34rem;
+      padding: 7px 0 0 0;
+
+      &-item {
+        font-size: 16px;
+        line-height: 24px;
+
+        span {
+          padding-left: 17px;
+        }
+      }
+    }
+  }
+}

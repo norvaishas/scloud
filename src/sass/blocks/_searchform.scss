@@ -13,3 +13,16 @@
     outline: none;
   }
 }
+
+@media screen and (max-width: 1367px) {
+  .search-form {
+    width: 200px;
+  }
+}
+
+@include breakpoint($tablet) {
+  .search-form {
+    width: 185px;
+    height: 28px;
+  }
+}

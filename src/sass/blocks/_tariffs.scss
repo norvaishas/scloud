@@ -1,17 +1,21 @@
 .tariffs {
   padding-bottom: 15rem;
+
   &__title {
     margin-bottom: 5.4rem;
   }
+
   &__buttons {
     display: flex;
     justify-content: space-between;
     width: 71%;
     margin: 0 auto 5.2rem;
+
     & .btn {
       padding: 1em 1.5em;
     }
   }
+
   &__discount {
     background: #FFFFFF;
     color: $main-color;
@@ -19,45 +23,55 @@
     border-radius: 2.1rem;
     padding: 0 .8rem;
     margin-left: 2rem;
+
     &_orng {
       background: $main-color;
       color: #FFFFFF;
     }
   }
+
   &__content {
     display: flex;
   }
+
   &-column {
     width: 50%;
     color: $secondary-color;
+
     & ul {
       list-style-image: url("../icons/supported.svg");
       padding-left: 3rem;
     }
+
     & li {
       line-height: 3.5rem;
       margin-top: 1rem;
       padding-left: 2.1rem;
     }
+
     &__item {
       width: 100%;
       border-bottom: 1px solid #E4E4E4;
       min-height: 6rem;
       padding-left: 7.7rem;
       padding-bottom: 3rem;
+
       &:first-child {
         padding-top: 5rem;
         padding-bottom: 5rem;
         padding-left: 7.9rem;
       }
+
       &:nth-child(2) {
         padding: 1.3rem 0 0 7.8rem;
       }
+
       & a {
         position: relative;
         display: block;
         margin: 1.2rem 0 3.9rem;
         @include caption(1.4rem, 700);
+
         &:after {
           position: absolute;
           bottom: 11%;
@@ -68,41 +82,207 @@
         }
       }
     }
+
     &__title {
       @include column-title;
       margin-top: 5.2rem;
     }
+
     &__price {
       display: flex;
       align-items: baseline;
       width: 60%;
       margin-top: 1.5rem;
       color: $middle-grey;
+
       &_new {
         @include caption(4.8rem, 700);
         line-height: 6.2rem;
       }
+
       &_old {
         @include caption(3.2rem, 400);
         line-height: 4.1rem;
         text-decoration: line-through;
       }
+
       &_note {
         color: $middle-grey;
       }
     }
+
     &__subtitle {
       @include caption(inherit, 700);
       margin-top: 2.8rem;
     }
+
     &:nth-child(2) {
       & ul {
         list-style-image: url("../icons/supported-orng.svg");
+
         &:last-child {
           li:last-child {
             color: $middle-grey;
             list-style-image: url("../icons/minus.svg");
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .tariffs {
+    padding-bottom: 13rem;
+
+    &__title {
+      margin-bottom: 6.4rem;
+    }
+
+    &__buttons {
+      width: 85%;
+      margin: 0 auto 5.6rem;
+
+      .btn {
+        padding: 1em 1em;
+      }
+    }
+
+    &-column {
+      font-size: 18px;
+
+      &__item {
+        padding-left: 5.7rem;
+        padding-bottom: 4rem;
+
+        &:first-child {
+          padding-top: 4rem;
+          padding-bottom: 3.2rem;
+          padding-left: 5.9rem;
+        }
+
+        &:nth-child(2) {
+          padding: 1rem 0 0 6rem;
+          font-size: 18px;
+        }
+      }
+
+      &__price {
+        width: 75%;
+      }
+
+      &__subtitle {
+        margin-top: 2rem;
+      }
+
+      li {
+        line-height: 32px;
+        margin-top: 1.2rem;
+        padding-left: 2.1rem;
+      }
+    }
+
+    .fs-2032 {
+      font-size: 18px;
+    }
+  }
+}
+
+@include breakpoint($tablet) {
+  .tariffs {
+    padding-bottom: 10rem;
+
+    &__title {
+      margin-bottom: 4.5rem;
+    }
+
+    &__buttons {
+      width: 99%;
+      margin-bottom: 3.4rem;
+
+      .btn {
+        min-width: 20%;
+        max-width: 21%;
+        height: 40px;
+        padding: 0 0;
+      }
+    }
+
+    &__discount {
+      padding: 3px 3px;
+      margin-left: 0;
+    }
+
+    &-column {
+      display: block;
+
+      &__item {
+        padding-bottom: 24px;
+        padding-left: 11%;
+
+        &:first-child {
+          padding-top: 3rem;
+          padding-bottom: 2.2rem;
+          padding-left: 3.9rem;
+        }
+
+        &:nth-child(2) {
+          padding: 1rem 0 0 4rem;
+          font-size: 16px;
+        }
+
+        a {
+          margin: 1.2rem 37px 2rem;
+        }
+
+        .btn {
+          min-width: 18.9rem;
+          height: 4rem;
+          padding: 0;
+          width: 23.8rem;
+        }
+      }
+
+      &__title {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &__subtitle {
+        font-size: 16px;
+      }
+
+      ul {
+        padding-left: 12%;
+      }
+
+      li {
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 5px;
+        padding-left: 0.1rem;
+      }
+
+      &:last-child {
+        margin-left: 2%;
+      }
+
+      &__price {
+        margin-top: 1rem;
+
+        &_new {
+          font-size: 24px;
+          line-height: 32px;
+        }
+
+        &_old {
+          font-size: 20px;
+          line-height: 32px;
+          margin-left: 2rem;
+        }
+
+        &_note {
+          display: none;
         }
       }
     }

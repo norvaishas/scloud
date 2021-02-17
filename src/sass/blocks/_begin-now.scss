@@ -1,6 +1,28 @@
 .begin-now {
   padding-bottom: 12rem;
+
   &__title {
     margin-bottom: 7rem;
+  }
+}
+
+
+@media screen and (max-width: 1367px) {
+  .begin-now {
+    padding-bottom: 10.5rem;
+
+    &__title {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@include breakpoint($tablet) {
+  .begin-now {
+    padding-bottom: 5.5rem;
+
+    &__title {
+      margin-bottom: 18px;
+    }
   }
 }
