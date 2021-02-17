@@ -255,3 +255,67 @@
     }
   }
 }
+
+
+@include breakpoint($mobile) {
+  .reasons {
+    &__title {
+      text-align: center;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__card {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__pic img {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+
+  .feedback {
+    &__item {
+      width: 100%;
+      min-width: auto;
+    }
+
+    &__author {
+      &-name {
+        font-size: 16px;
+        line-height: 21px;
+      }
+
+      &-company {
+        font-size: 16px;
+        line-height: 48px;
+      }
+
+      &-photo {
+        width: 64px;
+        height: 64px;
+      }
+    }
+
+    &__text {
+      padding-right: 25px;
+    }
+
+    .btn {
+      width: 15rem;
+    }
+
+    &__more {
+      text-align: center;
+      margin: 30px auto;
+      display: block;
+    }
+  }
+}

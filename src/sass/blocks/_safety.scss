@@ -59,10 +59,6 @@
   .safety {
     padding-bottom: 5rem;
 
-    &__title {
-
-    }
-
     &__img {
       max-width: 308px;
 
@@ -85,6 +81,37 @@
           padding-left: 17px;
         }
       }
+    }
+  }
+}
+
+@include breakpoint(690px) {
+  .safety {
+    &__img {
+      margin: 0 auto;
+    }
+  }
+}
+
+@include breakpoint($mobile) {
+  .safety {
+    padding-top: 2.5rem;
+
+    &__title {
+      font-size: 19px;
+    }
+
+    &__content {
+      flex-direction: column-reverse;
+      padding-left: 0;
+    }
+
+    &__list {
+      max-width: 96%;
+    }
+
+    &__img {
+      //margin-left: 5%;
     }
   }
 }

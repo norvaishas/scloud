@@ -110,3 +110,24 @@
     }
   }
 }
+
+@include breakpoint($mobile) {
+  .form {
+    &__offer {
+      width: 100%;
+      flex-direction: column;
+
+      span {
+        margin-top: 10px;
+      }
+
+      &-text {
+        margin-left: 0;
+      }
+
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}

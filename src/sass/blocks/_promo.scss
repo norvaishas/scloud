@@ -1,6 +1,4 @@
 .promo {
-  //width: 1312px;
-  //margin: 0 auto;
   padding: 6.3rem 0 11.7rem 0;
 
   &__wrapper {
@@ -16,7 +14,6 @@
     max-width: 48rem;
     font-size: 4rem;
     line-height: 5.6rem;
-    //text-align: center;
     margin-bottom: 1.3rem;
 
     &_mobile {
@@ -37,7 +34,6 @@
   }
 
   &__list {
-    //margin: 0 0 6.7rem 3.1rem;
     margin: 0 0 6.4rem 3.1rem;
     list-style: disc;
 
@@ -51,10 +47,13 @@
 
   &__buttons {
     width: 100%;
-    //width: 555px;p
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &_mobile {
+      display: none;
+    }
   }
 
   &__arrow-right {
@@ -66,7 +65,9 @@
   .promo {
     &__content {
       max-width: 49.5rem;
-      margin-right: 55px;
+      //margin-right: 55px;
+      //margin-right: 0;
+      margin-right: 10px;
     }
 
     &__title {
@@ -93,14 +94,127 @@
 
     &__pic {
       img {
-        width: 115%;
+        width: 100%;
         margin-top: 30px;
       }
     }
   }
 }
 
-/*
 @include breakpoint($tablet) {
+  .promo {
+    padding-top: 0;
+    padding-bottom: 6.2rem;
 
-}*/
+    &__title {
+      display: none;
+
+      &_mobile {
+        display: block;
+        @include caption(2.4rem, 700);
+        line-height: 32px;
+        margin-bottom: 22px;
+      }
+    }
+
+    &__description {
+      display: none;
+
+      &_mobile {
+        font-size: 12px;
+        line-height: 16px;
+        display: block;
+        margin-bottom: 42px;
+      }
+    }
+
+    &__list {
+      margin-left: 17px;
+      margin-bottom: 42px;
+
+      &-item {
+        min-width: 300px;
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    .btn {
+      height: 40px;
+    }
+
+    &__link {
+      display: none;
+    }
+
+    &__pic {
+      max-width: 563px;
+
+      img {
+        //width: 130%;
+        //margin: -30px 0 0 -40px;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+
+@include breakpoint($mobile) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+
+    &__content {
+      max-width: 100%;
+      margin-right: 0;
+    }
+
+    &__list-item {
+      min-width: 270px;
+      line-height: 32px;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__list {
+      margin-left: 5%;
+      margin-bottom: 10px;
+    }
+
+    &__pic {
+      img {
+        width: 100%;
+        margin: 0 0 51px;
+      }
+    }
+
+    &__title_mobile {
+      font-size: 23px;
+      margin-bottom: 60px;
+    }
+
+    &__description_mobile {
+      order: 2;
+      margin-top: 20px;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.01em;
+      color: $middle-grey;
+    }
+
+    &__buttons {
+      display: none;
+
+      &_mobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

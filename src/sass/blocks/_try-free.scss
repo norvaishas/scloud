@@ -22,3 +22,9 @@
     }
   }
 }
+
+@include breakpoint($mobile) {
+  .try-free {
+    padding-bottom: 3rem;
+  }
+}

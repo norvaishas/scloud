@@ -193,13 +193,15 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      min-width: 28%;
+      //min-width: 28%;
+      min-width: 12%;
     }
 
     &__phone {
       @include caption(1.4rem, 700);
       line-height: 18px;
       color: $dark-grey;
+      margin-right: 40px;
 
       &_pic {
         display: none;
@@ -236,5 +238,42 @@
         display: none;
       }
     }
+  }
+}
+
+@include breakpoint($mobile) {
+  .header {
+    &__phone {
+      display: none;
+    }
+
+    &-bottom__img {
+      width: 79%;
+    }
+
+    .account {
+      &__login {
+
+        svg {
+          display: none;
+        }
+      }
+    }
+
+    &-bottom {
+      &__account {
+        min-width: 65%;
+
+        .btn {
+          min-width: 125px;
+        }
+      }
+    }
+
+    &__phone_pic {
+      display: block;
+      margin-right: 15px;
+    }
+
   }
 }
