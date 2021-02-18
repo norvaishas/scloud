@@ -156,7 +156,8 @@
     &-bottom {
       display: flex;
       justify-content: space-between;
-      min-width: 83%;
+      //min-width: 83%;
+      min-width: auto;
       min-height: 79px;
 
       &__logo {
@@ -173,7 +174,7 @@
         align-items: center;
 
         a {
-          margin-right: 5px;
+          margin-right: 10px;
         }
 
         button {
@@ -262,7 +263,7 @@
 
     &-bottom {
       &__account {
-        min-width: 65%;
+        min-width: 20%;
 
         .btn {
           min-width: 125px;

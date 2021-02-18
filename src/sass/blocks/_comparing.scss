@@ -34,6 +34,7 @@
     font-weight: bold;
     color: $secondary-color;
     text-decoration: underline;
+    border-radius: 8px;
   }
 
   &__title {
@@ -245,7 +246,8 @@
     margin-bottom: 45px;
     margin-top: 10px;
     margin-left: 0;
-    min-width: 62%;
+    //min-width: 62%;
+    width: 100%;
 
     .mobile-column__item {
       display: none;

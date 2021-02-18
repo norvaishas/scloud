@@ -81,10 +81,17 @@
   }
 }
 
+@include breakpoint(690px) {
+  .integration__card:nth-child(2n) {
+    margin-left: 0;
+  }
+}
+
 @include breakpoint($mobile) {
   .integration__dropdown {
     width: 100%;
-     margin-left: 0;
+    margin-left: 0;
     text-align: center;
   }
+
 }
